@@ -7,17 +7,89 @@ body{
     background-color: hsl(240, 78%, 98%);
 }
 
-#first {
+html{
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+
+header {
     text-align: center;
 }
 
-#first h1{
-    padding-top: 80px;
-    padding-bottom: 30px;
+header h1{
+    padding-top: 70px;
+    padding-bottom: 40px;
 }
 
-#first p{
+header p{
     display: inline-block;
+    margin: auto 30px;
+    
+}
+
+#container p{
+  font-weight: 700;
+}
+
+button{
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#toggle-block{
+  display: flex;
+  justify-content: center;
+}
+
+#container{
+  background-color: rgba(0, 0, 255, 0.342);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+  align-items: center;
+}
+
+.card{
+  border: 1px solid red;
+  padding: 35px 30px;
+  display: flex;
+  background-color: burlywood;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-info{
+  background-color: rgba(0, 0, 255, 0.507);
+  
+}
+
+hr{
+  width: 300px;
+  margin: 15px 0;
+}
+
+.price{
+  font-size: 4.5rem;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.currency{
+  font-size: 2rem;
+  
+}
+
+#professional{
+  padding: 55px 30px;
+  border-radius: 10px;
 }
 
 
