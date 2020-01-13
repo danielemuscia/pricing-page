@@ -5,26 +5,35 @@
 
 body{
     background-color: hsl(240, 78%, 98%);
+    background-image: url(/pricing-component-with-toggle-master/images/bg-top.svg), url(/pricing-component-with-toggle-master/images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-x: right, left;
+    background-position-y: 0%, bottom;
+    height: 100vh;
 }
 
 html{
   font-family: 'Montserrat';
   font-size: 15px;
+  color: hsl(233, 13%, 49%);
 }
 
 header {
     text-align: center;
+    color: hsl(233, 13%, 49%);
 }
 
 header h1{
     padding-top: 70px;
     padding-bottom: 40px;
+    letter-spacing: 1px;
 }
 
 header p{
     display: inline-block;
     margin: auto 30px;
-    
+    font-weight: 700;
+    color: hsl(234, 14%, 74%);
 }
 
 #container p{
@@ -34,13 +43,22 @@ header p{
 button{
   width: 100%;
   padding: 15px;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Montserrat';
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: 700;
   margin-top: 20px;
   border-radius: 5px;
+  background: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+  color: hsl(240, 78%, 98%);
+}
+
+button:hover {
+  background: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+  cursor: pointer;
 }
 
 #toggle-block{
@@ -49,47 +67,72 @@ button{
 }
 
 #container{
-  background-color: rgba(0, 0, 255, 0.342);
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 70px;
   align-items: center;
+  
 }
 
 .card{
-  border: 1px solid red;
   padding: 35px 30px;
   display: flex;
-  background-color: burlywood;
+  background-color: rgb(255, 255, 255);
   align-items: center;
   border-radius: 10px;
-}
-
-.card-info{
-  background-color: rgba(0, 0, 255, 0.507);
-  
+  box-shadow: 30px 40px 30px 2px hsl(233, 13%, 49%, 0.1), -30px 0px 30px 0px hsl(233, 13%, 49%, 0.1);
 }
 
 hr{
   width: 300px;
   margin: 15px 0;
+  border: 1px solid hsl(233, 23%, 92%);
 }
 
 .price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(232, 13%, 33%);
+}
+
+.value{
   font-size: 4.5rem;
   font-weight: 700;
   padding: 15px;
 }
 
 .currency{
-  font-size: 2rem;
+  font-size: 2.5rem;
   
 }
 
 #professional{
   padding: 55px 30px;
   border-radius: 10px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: hsl(240, 78%, 98%);
+  z-index: 2;
+}
+
+#professional hr{
+  border: 1px solid hsl(236, 72%, 79%);
+}
+
+#professional .price{
+  color: hsl(240, 78%, 98%)
+}
+
+#professional button{
+  background: hsl(240, 78%, 98%);
+  color: hsl(237, 63%, 64%);
+}
+
+#professional button:hover{
+  background: rgba(255, 255, 255, 0);
+  color: hsl(240, 78%, 98%);
+  border: 1px solid hsl(240, 78%, 98%)
 }
 
 
@@ -118,11 +161,15 @@ hr{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     -webkit-transition: .4s;
     transition: .4s;
   }
   
+  .slider:hover{
+    background: linear-gradient(to right, hsla(236, 72%, 79%, 0.5), hsl(237, 63%, 64%, 0.5));
+  }
+
   .slider:before {
     position: absolute;
     content: "";
@@ -136,7 +183,7 @@ hr{
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   }
   
   input:focus + .slider {
@@ -149,6 +196,9 @@ hr{
     transform: translateX(26px);
   }
   
+  input:hover{
+    background: linear-gradient(to right, hsla(236, 72%, 79%, 0.5), hsl(237, 63%, 64%, 0.5));
+  }
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
