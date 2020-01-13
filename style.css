@@ -70,9 +70,9 @@ button:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 20px;
   align-items: center;
-  
+  padding: 50px;
 }
 
 .card{
@@ -206,4 +206,20 @@ hr{
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+
+  @media only screen and (max-width: 500px){
+    body{
+      background-image: url(/pricing-component-with-toggle-master/images/bg-top.svg);
+      background-position-x: 200px;
+    }
+
+    #container{
+      flex-direction: column;
+    }
+
+    .card{
+      margin-top: 30px;
+    }
   }
