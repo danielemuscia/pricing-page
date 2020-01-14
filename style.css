@@ -61,6 +61,10 @@ button:hover {
   cursor: pointer;
 }
 
+button:focus{
+  outline: 0;
+}
+
 #toggle-block{
   display: flex;
   justify-content: center;
@@ -167,7 +171,7 @@ hr{
   }
   
   .slider:hover{
-    background: linear-gradient(to right, hsla(236, 72%, 79%, 0.5), hsl(237, 63%, 64%, 0.5));
+    background: linear-gradient(to right, hsla(236, 72%, 79%, 0.5), hsl(237, 63%, 64%, 0.5)) !important;
   }
 
   .slider:before {
@@ -186,19 +190,14 @@ hr{
     background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   }
   
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
+  
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
-  input:hover{
-    background: linear-gradient(to right, hsla(236, 72%, 79%, 0.5), hsl(237, 63%, 64%, 0.5));
-  }
+
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;

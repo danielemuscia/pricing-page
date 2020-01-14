@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pricing Page</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <link rel="icon" href="/pricing-component-with-toggle-master/images/favicon-32x32.png">
+    
 </head>
 <body>
     <header>
         <h1>Our Pricing</h1>
         <div id='toggle-block'>
-            <p>Annualy</p>
+            <p>Annually</p>
             <label class="switch">
                 <input type="checkbox">
-                <span class="slider round"></span>
+                <span  id='toggle-slider'class="slider round"></span>
             </label>
             <p>Monthly</p>
         </div>
@@ -27,7 +28,7 @@
                 <h3 class="plan-name">Basic</h3>
                 <div class="price">
                     <p class="currency">$</p> 
-                    <p class="value">199.99</p>
+                    <p id="value-basic" class="value" >199.99</p>
                 </div>
                 <div class="info">
                     <hr>
@@ -38,7 +39,7 @@
                     <p>Send up to 3 GB</p>
                     <hr>
                 </div>
-                <button>Learn More</button>
+                <button id="test">Learn More</button>
             </div>
             
         </div>
@@ -47,7 +48,7 @@
                 <h3 class="plan-name">Professional</h3>
                 <div class="price">
                     <p class="currency">$</p> 
-                    <p class="value">249.99</p>
+                    <p class="value" id="value-professional">249.99</p>
                 </div>
                 <div class="info">
                     <hr>
@@ -67,7 +68,7 @@
                 <h3 class="plan-name">Master</h3>
                 <div class="price">
                     <p class="currency">$</p> 
-                    <p class="value">399.99</p>
+                    <p class="value" id="value-master">399.99</p>
                 </div>                
                 <div class="info">
                     <hr>
@@ -82,5 +83,7 @@
             </div>
         </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
