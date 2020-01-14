@@ -2,7 +2,7 @@ const priceBasic = document.getElementById('value-basic');
 const priceProfessional = document.getElementById('value-professional');
 const priceMaster = document.getElementById('value-master');
 const switchToggle = document.getElementById('toggle-slider');
-let toggleStatus = 'annually'
+let toggleStatus = 'monthly'
 
 const switchFunction = () => {
     if(toggleStatus === 'annually') {
