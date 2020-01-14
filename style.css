@@ -209,11 +209,10 @@ hr{
     border-radius: 50%;
   }
 
-
-  @media only screen and (max-width: 500px){
+  @media only screen and (max-width: 1100px){
     body{
-      background-image: url(/pricing-component-with-toggle-master/images/bg-top.svg);
-      background-position-x: 200px;
+      background-image: url(images/bg-top.svg);
+      background-position-x: right;
     }
 
     #container{
